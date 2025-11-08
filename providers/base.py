@@ -8,6 +8,7 @@ from dataclasses import dataclass
 class BaseProvider:
     API_KEY: str = ""
     URL: str = ""
+    NAME: str = "BASE"
 
     @staticmethod
     def parse_date(date_obj: dt.date | str) -> dt.datetime:
