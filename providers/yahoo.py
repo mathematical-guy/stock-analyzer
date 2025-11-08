@@ -5,6 +5,8 @@ from providers import BaseProvider
 
 
 class YahooProvider(BaseProvider):
+    NAME = "Yahoo Provider"
+
     def get_date_range_data(
         self,
         name: str,
